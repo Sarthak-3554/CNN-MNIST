@@ -26,16 +26,16 @@ tf.keras.datasets.mnist.load_data()
 
 Input (28×28×1)
 ↓
-Conv2D (32 filters, 3×3) + ReLU
+Conv2D (64 filters, 3×3) + ReLU
 ↓
 MaxPooling (2×2)
 ↓
-Conv2D (64 filters, 3×3) + ReLU
+Conv2D (128 filters, 3×3) + ReLU
 ↓
 MaxPooling (2×2)
 ↓
 Flatten
 ↓
-Dense (128, ReLU)
+Dense (3200, ReLU)
 ↓
 Dense (10, Softmax)
