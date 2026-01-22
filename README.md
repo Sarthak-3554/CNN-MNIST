@@ -23,3 +23,19 @@ The model is trained to classify digits from **0 to 9** with high accuracy and a
 Dataset is automatically loaded using:
 ```python
 tf.keras.datasets.mnist.load_data()
+
+Input (28×28×1)
+↓
+Conv2D (32 filters, 3×3) + ReLU
+↓
+MaxPooling (2×2)
+↓
+Conv2D (64 filters, 3×3) + ReLU
+↓
+MaxPooling (2×2)
+↓
+Flatten
+↓
+Dense (128, ReLU)
+↓
+Dense (10, Softmax)
